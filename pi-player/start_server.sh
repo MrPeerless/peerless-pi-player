@@ -1,4 +1,4 @@
 #!/bin/sh
-cd home/geoff/Documents/pi-player
+cd home/USER/Documents/pi-player
 python -m SimpleHTTPServer &
 unclutter -root &
