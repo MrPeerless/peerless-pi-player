@@ -4,8 +4,10 @@
     "\\pi-player",
     "\\pi-player\\css",
     "\\pi-player\\data",
+    "\\pi-player\\graphics",
+    "\\pi-player\\images",
     "\\pi-player\\js"
   ],
-  "SelectedNode": "\\pi-player\\js\\jquery-3.6.4.min.js",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
