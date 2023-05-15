@@ -1,7 +1,7 @@
 body {
     height: auto;
     font-family: 'Calibri', 'Arial', 'sans-serif';
-    color: black;
+    color: white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -44,13 +44,18 @@ h3 {
 }
 
     #divImageContainer img {
-        width: 500px;
+        width: 750px;
     }
 
 #divTextContainer {
     text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
 }
-
 
 
 

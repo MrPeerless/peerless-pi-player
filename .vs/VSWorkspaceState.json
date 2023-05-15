@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\standard"
+    "\\pi-player",
+    "\\pi-player\\css",
+    "\\pi-player\\data",
+    "\\pi-player\\js"
   ],
-  "SelectedNode": "\\standard\\.gitignore",
+  "SelectedNode": "\\pi-player\\js\\jquery-3.6.4.min.js",
   "PreviewInSolutionExplorer": false
 }
