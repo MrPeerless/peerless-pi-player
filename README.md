@@ -55,7 +55,7 @@ If you do not have a USB mouse and keyboard it is possible, but more technical t
 ### Set up Peerless-Pi-Player
 
 1. Allow the Raspberry Pi to be controlled remotely over your home network.
-	- Go to Raspberry Pi Configuration - Interfaces
+	- Go to Preferenxes - Raspberry Pi Configuration - Interfaces
 	- Enable SSH
 	- Create public/private key pair to be used as authentication, instead of a password, between your Windows machine and the Raspberry Pi. Follow instructions at the link below to create a key pair:
 	- <a href="https://endjin.com/blog/2019/09/passwordless-ssh-from-windows-10-to-raspberry-pi">Passwordless SSH from Windows 10 to Raspberry Pi</a>
@@ -75,7 +75,7 @@ If you do not have a USB mouse and keyboard it is possible, but more technical t
 		<img src="pi-player/images/screenshot_sshd_config.png"><br>
 
 3. Stop your Raspberry Pi from going to sleep.
-	- Go to Raspberry Pi Configuration - Display
+	- Go to Preferences - Raspberry Pi Configuration - Display
 	- Disable screen blanking
 
 4. Turn off Bluetooth
