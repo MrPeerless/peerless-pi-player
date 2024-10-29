@@ -1,0 +1,16 @@
+UPDATE LOG
+
+Version 0.1.1 Date 29.10.2024
+Added online/offline graphic to screen.
+
+New Files Added
+	\graphics\offline.png
+	\graphics\offline_black.png
+	\graphics\online.png
+	\graphics\online_black.png
+
+Current Files Updated
+	\graphics\default.jpg
+	\css\style.css
+	\index.html
+	\js\index.js

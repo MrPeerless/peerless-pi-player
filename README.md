@@ -180,3 +180,19 @@ If you do not have a USB mouse and keyboard it is possible, but more technical t
 <!--
 <img src="pi-player/images/playing.png">
 -->
+# Updates
+## Version 0.1.1 Date 29.10.2024
+Added online/offline graphic to screen to detect if Raspberry Pi loses network connection.
+
+### New Files Added
+	\graphics\offline.png
+	\graphics\offline_black.png
+	\graphics\online.png
+	\graphics\online_black.png
+
+### Current Files Updated
+	\graphics\default.jpg
+	\css\style.css
+	\index.html
+	\js\index.js
+

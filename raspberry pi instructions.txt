@@ -1,0 +1,15 @@
+Connecting to network
+
+1. open terminal
+2. type in following command
+	sudo raspi-config
+3. system options
+4. wireless lan
+5. PLease enter SSID
+	- network name
+6. Please enter passphrase.
+	- network password
+
+BT hub ip address: 192.168.1.254
+
+

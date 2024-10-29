@@ -6,6 +6,47 @@ var modifiedDate ="1";
 var defaultSource = "./graphics/default.jpg?modified=";
 var jsonFile = "./data/pi_data.json";
 
+// Check if online or offline
+let online = window.navigator.onLine
+
+// Add online/offline graphic to screen
+if (online) {
+    if ($('#imgOnline').hasClass("white")) {
+        $('#imgOnline').attr("src", "./graphics/online.png");
+    }
+    else {
+        $('#imgOnline').attr("src", "./graphics/online_black.png");
+    } 
+}
+else {
+    if ($('#imgOnline').hasClass("white")) {
+        $('#imgOnline').attr("src", "./graphics/offline.png");
+    }
+    else {
+        $('#imgOnline').attr("src", "./graphics/offline_black.png");
+    }
+}
+
+// Event listner to detect when comes online
+window.addEventListener("online", (event) => {
+    if ($('#imgOnline').hasClass("white")) {
+        $('#imgOnline').attr("src", "./graphics/online.png");
+    }
+    else {
+        $('#imgOnline').attr("src", "./graphics/online_black.png");
+    } 
+});
+
+// Event listner to detect when goes offline
+window.addEventListener("offline", (event) => {
+    if ($('#imgOnline').hasClass("white")) {
+        $('#imgOnline').attr("src", "./graphics/offline.png");
+    }
+    else {
+        $('#imgOnline').attr("src", "./graphics/offline_black.png");
+    }
+});
+
 $(document).ready(function () {
     // Check screen width and if under 750px resize album image size
     var scnHeight = $(window).height();
@@ -20,7 +61,7 @@ $(document).ready(function () {
     $('#imgAlbumArtwork').attr("src", defaultSource);
     $('#artist').text("Peerless-Pi-Player");
     $('#album').text("It's Music To Your Ears");
-    $('#track').text("Version 0.1.0");
+    $('#track').text("Version 0.1.1");
 
     // Set background colour of body to dominate colour of image
     colour(defaultSource);
@@ -48,6 +89,7 @@ $(document).ready(function () {
                 dataType: "json",
                 success: function (data, textStatus, request) {
                     var lastModified = data.timeStamp;
+
                     // If modified date has changed update artwork and text
                     if (lastModified != modifiedDate) {
                         // Update modifedDate with the timeStamp from pi_data.json file
@@ -109,6 +151,22 @@ async function colour(filePath) {
     var oppositeColour = invertColor(domColourHex, 1);
     // Set all text colour to oppositeColour
     document.body.style.color = oppositeColour;
+
+    // Switch class of on/offline graphic
+    if (oppositeColour == "#FFFFFF") {       
+        $('.black').toggleClass('black white');
+    }
+    else {
+        $('.white').toggleClass('white black');
+    }
+
+    // Switch on/offline graphic depending on class
+    if ($('#imgOnline').hasClass("white")) {
+        $('#imgOnline').attr("src", "./graphics/online.png");
+    }
+    else {
+        $('#imgOnline').attr("src", "./graphics/online_black.png");
+    } 
 };
 
 // Function to convert RGB to HEX

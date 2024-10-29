@@ -2,12 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\pi-player",
-    "\\pi-player\\css",
-    "\\pi-player\\data",
-    "\\pi-player\\graphics",
-    "\\pi-player\\images",
-    "\\pi-player\\js"
+    "\\pi-player\\graphics"
   ],
-  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
